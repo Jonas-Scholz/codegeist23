@@ -1,0 +1,20 @@
+modules:
+  confluence:spaceSettings:
+    - key: protokolant
+      function: main
+      title: ProtokolANT
+  function:
+    - key: main
+      handler: index.run
+    - key: web-trigger-function
+      handler: trigger.run
+  webtrigger:
+    - key: web-trigger-key
+      function: web-trigger-function
+permissions:
+  scopes:
+    - storage:app
+    - write:page:confluence
+    - read:space:confluence
+app:
+  id: ari:cloud:ecosystem::app/dad13271-e3b2-41f3-8ecc-9e41653be04a

@@ -1,0 +1,41 @@
+{
+  "name": "codegeist-bot",
+  "version": "0.1.0",
+  "description": "codegeist bot thingy",
+  "author": "Jonas Scholz",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "lint": "tslint ./src/**/*.ts",
+    "fix": "tslint --fix ./src/**/*.ts",
+    "start": "ts-node src/backblaze.ts"
+  },
+  "pre-commit": [
+    "lint"
+  ],
+  "dependencies": {
+    "@dqbd/tiktoken": "^1.0.7",
+    "@hono/node-server": "^1.2.0",
+    "backblaze-b2": "^1.7.0",
+    "dotenv": "^16.3.1",
+    "hono": "^3.8.3",
+    "openai": "^4.13.0",
+    "puppeteer": "^21.4.0",
+    "puppeteer-extra": "^3.3.6",
+    "puppeteer-extra-plugin-stealth": "^2.11.2",
+    "puppeteer-screen-recorder": "^2.1.2",
+    "puppeteer-stream": "^3.0.7"
+  },
+  "devDependencies": {
+    "@types/backblaze-b2": "^1.5.5",
+    "@types/node": "^10.14.13",
+    "@types/puppeteer": "^1.12.4",
+    "pre-commit": "^1.2.2",
+    "prettier": "^1.18.2",
+    "ts-node": "^7.0.1",
+    "tslint": "^5.18.0",
+    "tslint-config-prettier": "^1.18.0",
+    "tslint-plugin-prettier": "^2.0.1",
+    "typescript": "^3.5.3"
+  }
+}
